@@ -70,6 +70,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
 /**
  * Initialize Google map, called from HTML.
  */
+
 window.initMap = () => {
   let loc = {
     lat: 40.722216,
@@ -82,6 +83,7 @@ window.initMap = () => {
   });
   updateRestaurants();
 }
+
 
 /**
  * Update page and map for current restaurants.
@@ -178,6 +180,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 }
 
+//Here I am registering the Service Worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('./sw.js', { scope: './' })
