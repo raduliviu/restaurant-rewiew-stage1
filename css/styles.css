@@ -126,6 +126,8 @@ nav h1 a {
   align-items: center;
   text-align: center;
   padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .filter-options h2 {
   color: white;
@@ -133,6 +135,9 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+}
+#filter-title {
+  flex: 1 0 100%;
 }
 .filter-options select {
   background-color: white;
@@ -151,7 +156,7 @@ nav h1 a {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
-  width: 50%;
+  flex: 1 0 100%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -306,6 +311,9 @@ nav h1 a {
 @media screen and (min-width: 700px) {
   #restaurants-list li {
     width: 50%;
+  }
+  .filter-selection {
+    flex: 1 0 50%;
   }
 }
 
